@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* font-family: url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap'); */
+  --color-primary: #3C4973;
+  --color-primary-variant: #6A79A6;
+  --color-secondary: #b5bbce;
+  --color-tertiary : #B48967;
+  --color-success: #14A44D;
+  --color-danger: #DC4C64;
+}
+
+.font-sansita {
+  font-family: 'Sansita Swashed', cursive;
+}
+.landing-bg {
+  /* z-index: -1; */
+}
+
+.navbar {
+  /* width: 20%; */
+  display: none;
+  /* justify-content: center; */
+  height: -webkit-fill-available
+}
+.navbar-toggler {
+  display: none;
+}
+label {
+  /* top: .5rem; */
+  position: absolute;
+}
+input.navbar-toggler:checked~.navbar {
+  /* position: absolute; */
+  display: block;
+  /* background-color: var(--color-tertiary); */
+}
+label i::before {
+  font-size: 2.5rem;
+}
+li {
+  padding: .5rem;
+}
+button {
+  margin: .5rem;
+}
