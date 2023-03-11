@@ -38,3 +38,9 @@ label {
 input.navbar-toggler:checked~.navbar {
   display: block;
 }
+.color-success {
+  background-color: var(--color-success);
+}
+.color-error {
+  background-color: var(--color-danger);
+}
