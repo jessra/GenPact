@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Alert from "./Alert";
 
 export default function Traveler({open, cerrarModal}) {
   const [correo, setCorreo] = useState('')
