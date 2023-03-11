@@ -3,6 +3,7 @@ import Inicio from "../components/Inicio";
 import TheGame from "../components/TheGame.jsx";
 import Heroes from "../components/Heroes.jsx";
 import Naciones from "../components/Naciones.jsx";
+import Error from "../components/Error.jsx";
 
 export default function Router() {
 	return (
@@ -12,6 +13,7 @@ export default function Router() {
 				<Route path="/TheGame" element={<TheGame />} />
 				<Route path="/Heroes" element={<Heroes />} />
 				<Route path="/Naciones" element={<Naciones />} />
+				<Route path="*" element={<Error />} />
 			</Routes>
 		</BrowserRouter>
 	);

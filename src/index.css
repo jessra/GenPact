@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 :root {
-  /* font-family: url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap'); */
   --color-primary: #3C4973;
   --color-primary-variant: #6A79A6;
   --color-secondary: #b5bbce;
@@ -15,34 +14,27 @@
 .font-sansita {
   font-family: 'Sansita Swashed', cursive;
 }
-.landing-bg {
-  /* z-index: -1; */
+.nacion-1:hover .mondstadt, .nacion-2:hover .liyue, .nacion-3:hover 
+.inazuma, .nacion-4:hover .sumeru {
+  opacity: 1;
 }
-
+.heroes {
+  transform: translateX(-500%);
+}
+.visible {
+  transition: .9s ease-in-out;
+  transform: translateX(0);
+}
 .navbar {
-  /* width: 20%; */
   display: none;
-  /* justify-content: center; */
   height: -webkit-fill-available
 }
 .navbar-toggler {
   display: none;
 }
 label {
-  /* top: .5rem; */
   position: absolute;
 }
 input.navbar-toggler:checked~.navbar {
-  /* position: absolute; */
   display: block;
-  /* background-color: var(--color-tertiary); */
-}
-label i::before {
-  font-size: 2.5rem;
-}
-li {
-  padding: .5rem;
-}
-button {
-  margin: .5rem;
 }
